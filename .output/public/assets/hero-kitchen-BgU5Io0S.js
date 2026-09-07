@@ -1,0 +1,1 @@
+var e=`/assets/hero-kitchen-DhYpoEHt.jpg`;export{e as t};
