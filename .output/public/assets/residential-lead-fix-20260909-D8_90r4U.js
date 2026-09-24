@@ -1,0 +1,1 @@
+var e=`/assets/residential-DEePcMF4.webp`;export{e as t};

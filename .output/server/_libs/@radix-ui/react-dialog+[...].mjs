@@ -1,6 +1,6 @@
 import { r as __toESM } from "../../_runtime.mjs";
 import { l as require_react_dom, u as require_react } from "../@floating-ui/react-dom+[...].mjs";
-import { _ as useComposedRefs, c as useId, f as createContextScope, g as createSlot, l as useLayoutEffect2, m as dispatchDiscreteCustomEvent, o as useControllableState, p as Primitive, s as Presence, v as require_jsx_runtime } from "./react-accordion+[...].mjs";
+import { _ as useComposedRefs, c as Presence, f as createContextScope, g as createSlot, l as useControllableState, m as dispatchDiscreteCustomEvent, p as Primitive, s as useId, u as useLayoutEffect2, v as require_jsx_runtime } from "./react-accordion+[...].mjs";
 import { t as composeEventHandlers } from "../radix-ui__primitive.mjs";
 import { __assign, __rest, __spreadArray } from "tslib";
 //#region node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs

@@ -1,0 +1,254 @@
+import { v as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
+import { i as site } from "./site-lead-fix-20260909-UvA_aLA3.mjs";
+import { t as AnimatedSection } from "./AnimatedSection-lead-fix-20260909-DoBcVPkc.mjs";
+import { t as CtaBand } from "./cta-band-lead-fix-20260909-BoEjIfIZ.mjs";
+import { i as SectionHeading, n as PageHero, r as Section } from "./page-sections-lead-fix-20260909-iQ-k7Kxp.mjs";
+import { t as residential_default } from "./residential-lead-fix-20260909-C3SAEcv5.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/about-lead-fix-20260909-BZjPY4Pm.js
+var import_jsx_runtime = require_jsx_runtime();
+var rose_julliana_portrait_default = "/assets/rose-julliana-portrait-C0Zn22LQ.webp";
+var storyChapters = [
+	{
+		number: "01",
+		eyebrow: "The beginning",
+		title: "One home. One relationship at a time.",
+		paragraphs: ["TLC Cleaning began more than 15 years ago with Rose, a strong work ethic, and a simple commitment: to take care of every client's home with the same attention and care she would give her own.", "In the early years, Rose did much of the cleaning herself, gradually building the company one home and one relationship at a time. Through consistency, referrals, and the trust of her clients, what started as a small cleaning business began to grow."]
+	},
+	{
+		number: "02",
+		eyebrow: "A family turning point",
+		title: "When life changed, they chose to build together.",
+		paragraphs: [
+			"At the time, Rose's daughter, Julliana, was attending college for business while working full-time in an administrative role. Joining the family business wasn't originally part of the plan—but when Julliana's father became ill, their family's circumstances changed.",
+			"Rose was balancing the demands of running and working in the business while also trying to spend more time at home caring for her husband. Julliana saw an opportunity to help her mother while also building upon everything Rose had worked so hard to create.",
+			"The two decided to work together with a goal that was both personal and professional: grow TLC into a company that no longer depended on Rose personally cleaning every home, without losing the quality and personal care that had made clients trust her in the first place."
+		]
+	},
+	{
+		number: "03",
+		eyebrow: "The next chapter",
+		title: "A successful transition—without losing the personal touch.",
+		paragraphs: ["Within a year, they accomplished that transition.", "Today, TLC Cleaning has grown into a professionally managed cleaning company with carefully selected and trained teams—but it remains proudly mother-and-daughter owned and operated."]
+	}
+];
+var roles = [{
+	name: "Julliana",
+	role: "Operations & client experience",
+	copy: "Julliana oversees the day-to-day operations of the company, including scheduling, team coordination, client communication, customer service, quality control, and the systems that keep TLC running smoothly."
+}, {
+	name: "Rose",
+	role: "Training & quality standards",
+	copy: "With more than 15 years of hands-on cleaning experience, Rose focuses on training cleaners, supervising teams, maintaining cleaning standards, and ensuring that her knowledge and attention to detail are passed along to every TLC team."
+}];
+function About() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageHero, {
+			eyebrow: "About",
+			title: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: ["Cleaning with care", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+				className: "block text-primary",
+				children: "since 2015."
+			})] }),
+			lead: `TLC Cleaning Co. is a family-owned cleaning company serving homes and businesses across the ${site.area}.`,
+			image: residential_default
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Section, {
+			className: "overflow-hidden",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "grid items-end gap-10 lg:grid-cols-[minmax(0,0.78fr)_minmax(0,1.22fr)] lg:gap-16",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AnimatedSection, {
+					animation: "fade-in-right",
+					className: "pb-2 lg:pb-10",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "eyebrow text-muted-foreground",
+							children: "A mother-and-daughter story"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+							className: "mt-5 max-w-xl text-balance text-4xl leading-[1.07] sm:text-5xl lg:text-[3.55rem]",
+							children: "Built with hard work. Grown with heart."
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-7 max-w-lg text-base leading-[1.8] text-muted-foreground md:text-lg",
+							children: "Before TLC became a professionally managed cleaning company, it began with one woman showing up, doing exceptional work, and earning trust home by home."
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "mt-10 flex items-center gap-4 border-t border-border pt-6",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "font-display text-4xl leading-none text-primary",
+								children: "15+"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "max-w-44 text-xs font-semibold uppercase leading-relaxed tracking-[0.16em] text-muted-foreground",
+								children: "Years of hands-on experience"
+							})]
+						})
+					]
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(AnimatedSection, {
+					animation: "fade-in-left",
+					delay: 100,
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
+						className: "relative mx-auto w-full max-w-[36rem] lg:mr-0",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -left-4 -top-4 hidden size-24 rounded-tl-[2.5rem] border-l border-t border-primary/70 md:block" }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+								src: rose_julliana_portrait_default,
+								alt: "Rose and Julliana, the mother-and-daughter team behind TLC Cleaning Co.",
+								width: 1024,
+								height: 1536,
+								loading: "eager",
+								decoding: "async",
+								className: "aspect-[3/4] w-full rounded-[1.75rem] object-cover object-center shadow-[var(--shadow-lift)]"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figcaption", {
+								className: "relative -mt-5 ml-5 mr-5 rounded-2xl border border-border/80 bg-background/95 px-5 py-4 shadow-[var(--shadow-soft)] backdrop-blur md:ml-auto md:mr-7 md:max-w-sm md:px-6",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "font-display text-lg leading-tight text-foreground",
+									children: "Rose & Julliana"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "mt-1 text-[0.68rem] font-semibold uppercase tracking-[0.17em] text-muted-foreground",
+									children: "Mother · Daughter · Partners"
+								})]
+							})
+						]
+					})
+				})]
+			})
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Section, {
+			tone: "sand",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "grid gap-12 lg:grid-cols-[minmax(0,0.72fr)_minmax(0,1.28fr)] lg:gap-20",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AnimatedSection, {
+					animation: "fade-in-right",
+					className: "lg:sticky lg:top-28 lg:self-start",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionHeading, {
+						eyebrow: "Our story",
+						title: "The people behind the care.",
+						lead: "A family business shaped by resilience, shared purpose, and a promise to protect the quality that clients trusted from the very beginning."
+					})
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "divide-y divide-border border-y border-border",
+					children: storyChapters.map((chapter, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AnimatedSection, {
+						animation: "fade-in-left",
+						delay: index * 100,
+						as: "article",
+						className: "grid gap-5 py-9 sm:grid-cols-[4.25rem_minmax(0,1fr)] sm:py-11",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "font-display text-4xl leading-none text-primary",
+							children: chapter.number
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "eyebrow text-muted-foreground",
+								children: chapter.eyebrow
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+								className: "mt-4 max-w-xl text-2xl leading-[1.16] sm:text-3xl",
+								children: chapter.title
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "mt-6 space-y-5 text-[0.95rem] leading-[1.8] text-muted-foreground",
+								children: chapter.paragraphs.map((paragraph) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: paragraph }, paragraph))
+							})
+						] })]
+					}, chapter.number))
+				})]
+			})
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, { children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AnimatedSection, {
+				animation: "fade-in-up",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionHeading, {
+					eyebrow: "TLC today",
+					title: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: ["Different roles.", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						className: "block text-muted-foreground",
+						children: "The same personal commitment."
+					})] }),
+					lead: "Their roles may have changed, but their involvement hasn't. Rose and Julliana remain personally connected to the people, standards, and client experience behind every visit."
+				})
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "mt-12 grid gap-5 lg:grid-cols-2",
+				children: roles.map((person, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AnimatedSection, {
+					animation: "fade-in-up",
+					delay: (index + 1) * 100,
+					as: "article",
+					className: "group relative overflow-hidden rounded-3xl border border-border bg-card p-7 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-lift)] sm:p-9",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute right-0 top-0 size-28 rounded-bl-full bg-lime-soft/70 transition-transform duration-500 group-hover:scale-110" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "relative",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "eyebrow text-muted-foreground",
+								children: person.role
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+								className: "mt-4 text-3xl",
+								children: person.name
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "mt-6 h-px w-14 bg-primary" }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "mt-6 max-w-xl text-[0.95rem] leading-[1.8] text-muted-foreground",
+								children: person.copy
+							})
+						]
+					})]
+				}, person.name))
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AnimatedSection, {
+				animation: "fade-in-up",
+				delay: 200,
+				className: "mt-8 grid gap-8 rounded-3xl border border-border bg-sand p-7 sm:p-9 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:p-12",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "font-display text-3xl leading-[1.18] sm:text-4xl",
+					children: "Personally involved—from the people they hire to the care clients receive."
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "text-[0.95rem] leading-[1.8] text-muted-foreground",
+					children: "Every TLC cleaning professional is carefully screened and trained by the company. Rose and Julliana remain personally involved in the people they hire, the standards they establish, and the experience their clients receive."
+				})]
+			})
+		] }),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
+			tone: "ink",
+			className: "relative overflow-hidden",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				"aria-hidden": true,
+				className: "absolute -right-24 top-1/2 size-80 -translate-y-1/2 rounded-full border border-ink-foreground/10 sm:size-[30rem]",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-10 rounded-full border border-ink-foreground/10" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-24 rounded-full bg-primary/10 blur-2xl" })]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AnimatedSection, {
+				animation: "fade-in-up",
+				className: "relative max-w-4xl",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "eyebrow text-primary",
+						children: "What has never changed"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "mt-7 font-display text-3xl leading-[1.2] text-ink-foreground sm:text-4xl lg:text-5xl",
+						children: "“TLC has grown considerably from its beginnings, but the philosophy behind the company remains simple.”"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "mt-9 grid gap-3 text-sm font-semibold uppercase tracking-[0.12em] text-ink-muted sm:grid-cols-3 sm:gap-6",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "border-l-2 border-primary pl-4",
+								children: "Take care of the people."
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "border-l-2 border-primary pl-4",
+								children: "Take pride in the work."
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "border-l-2 border-primary pl-4",
+								children: "Never lose the personal touch."
+							})
+						]
+					})
+				]
+			})]
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CtaBand, {
+			title: "Care that still feels personal.",
+			lead: "Tell us about your home or business and discover the thoughtful, dependable service Rose and Julliana built TLC to deliver."
+		})
+	] });
+}
+//#endregion
+export { About as component };

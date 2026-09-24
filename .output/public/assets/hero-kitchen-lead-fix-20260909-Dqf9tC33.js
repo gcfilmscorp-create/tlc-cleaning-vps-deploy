@@ -1,0 +1,1 @@
+var e=`/assets/hero-kitchen-_d02PDz6.webp`;export{e as t};

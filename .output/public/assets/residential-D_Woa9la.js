@@ -1,1 +1,0 @@
-var e=`/assets/residential-Y81u4jS_.jpg`;export{e as t};
