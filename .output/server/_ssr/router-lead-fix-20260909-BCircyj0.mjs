@@ -4,14 +4,14 @@ import { v as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[..
 import { t as cva } from "../_libs/class-variance-authority+clsx.mjs";
 import { i as site, n as cn, r as navLinks, t as Button } from "./site-lead-fix-20260909-UvA_aLA3.mjs";
 import { c as HeadContent, d as createRouter, f as Outlet, g as Link, h as createRootRouteWithContext, l as useLocation, m as createFileRoute, p as lazyRouteComponent, s as Scripts, v as useRouter } from "../_libs/@tanstack/react-router+[...].mjs";
-import { B as ArrowUp, C as Facebook, T as Clock, h as MapPin, m as Menu, t as X, u as Phone, y as Instagram } from "../_libs/lucide-react.mjs";
+import { D as Clock, T as Facebook, U as ArrowUp, b as Instagram, g as MapPin, h as Menu, t as X, u as Phone } from "../_libs/lucide-react.mjs";
 import { a as DialogOverlay, c as DialogTrigger, i as DialogDescription, n as DialogClose, o as DialogPortal, r as DialogContent, s as DialogTitle, t as Dialog } from "../_libs/@radix-ui/react-dialog+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
 import { t as QueryClientProvider } from "../_libs/tanstack__react-query.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-lead-fix-20260909-0fK3JSVq.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-lead-fix-20260909-BCircyj0.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-DeF5lzy5.css";
+var styles_default = "/assets/styles-CzZCPX0l.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -812,7 +812,7 @@ function RootComponent() {
 		})]
 	});
 }
-var $$splitComponentImporter$8 = () => import("./routes-lead-fix-20260909-NQvHKD0t.mjs");
+var $$splitComponentImporter$8 = () => import("./routes-lead-fix-20260909-DXs1S63l.mjs");
 var Route$8 = createFileRoute("/")({
 	head: () => pageSeo({
 		path: "/",

@@ -1,7 +1,7 @@
 import { v as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { n as cn } from "./site-lead-fix-20260909-UvA_aLA3.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { A as ChevronRight } from "../_libs/lucide-react.mjs";
+import { M as ChevronRight } from "../_libs/lucide-react.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/page-sections-lead-fix-20260909-iQ-k7Kxp.js
 var import_jsx_runtime = require_jsx_runtime();
 function PageHero({ eyebrow, title, lead, image, children }) {

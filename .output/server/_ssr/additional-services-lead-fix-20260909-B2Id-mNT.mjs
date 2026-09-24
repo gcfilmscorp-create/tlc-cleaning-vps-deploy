@@ -1,7 +1,7 @@
 import { v as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { t as Button } from "./site-lead-fix-20260909-UvA_aLA3.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { L as Boxes, R as Blinds, U as AppWindow, c as Refrigerator, o as Shirt, v as Lamp, w as CookingPot, z as BadgeCheck } from "../_libs/lucide-react.mjs";
+import { B as Boxes, E as CookingPot, H as BadgeCheck, K as AppWindow, V as Blinds, c as Refrigerator, o as Shirt, y as Lamp } from "../_libs/lucide-react.mjs";
 import { t as CtaBand } from "./cta-band-lead-fix-20260909-BoEjIfIZ.mjs";
 import { i as SectionHeading, n as PageHero, r as Section } from "./page-sections-lead-fix-20260909-iQ-k7Kxp.mjs";
 import { t as hero_kitchen_default } from "./hero-kitchen-lead-fix-20260909-CnCra9cV.mjs";

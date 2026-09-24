@@ -4,12 +4,13 @@ import { v as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[..
 import { i as site, n as cn, t as Button } from "./site-lead-fix-20260909-UvA_aLA3.mjs";
 import { t as AnimatedSection } from "./AnimatedSection-lead-fix-20260909-DoBcVPkc.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { D as ClipboardCheck, H as ArrowRight, I as Building2, S as Hammer, V as ArrowUpRight, _ as Leaf, a as SlidersHorizontal, b as Images, d as MessageSquare, i as Truck, l as Play, n as Wrench, r as Users, s as ShieldCheck, u as Phone, x as House, y as Instagram, z as BadgeCheck } from "../_libs/lucide-react.mjs";
+import { C as Heart, G as ArrowRight, H as BadgeCheck, M as ChevronRight, N as ChevronLeft, S as House, W as ArrowUpRight, a as SlidersHorizontal, b as Instagram, d as MessageSquare, i as Truck, k as ClipboardCheck, l as Play, n as Wrench, p as MessageCircle, r as Users, s as ShieldCheck, t as X, u as Phone, v as Leaf, w as Hammer, x as Images, z as Building2 } from "../_libs/lucide-react.mjs";
 import { t as CtaBand } from "./cta-band-lead-fix-20260909-BoEjIfIZ.mjs";
 import { i as SectionHeading, r as Section } from "./page-sections-lead-fix-20260909-iQ-k7Kxp.mjs";
 import { t as residential_default } from "./residential-lead-fix-20260909-C3SAEcv5.mjs";
 import { t as hero_kitchen_default } from "./hero-kitchen-lead-fix-20260909-CnCra9cV.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-lead-fix-20260909-NQvHKD0t.js
+import { a as DialogOverlay$1, i as DialogDescription$1, n as DialogClose, o as DialogPortal$1, r as DialogContent$1, s as DialogTitle$1, t as Dialog$1 } from "../_libs/@radix-ui/react-dialog+[...].mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-lead-fix-20260909-DXs1S63l.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function PhoneButton({ className, phone = "(978) 594-5554" }) {
@@ -30,6 +31,49 @@ function PhoneButton({ className, phone = "(978) 594-5554" }) {
 		]
 	});
 }
+var Dialog = Dialog$1;
+var DialogPortal = DialogPortal$1;
+var DialogOverlay = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogOverlay$1, {
+	ref,
+	className: cn("fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0", className),
+	...props
+}));
+DialogOverlay.displayName = DialogOverlay$1.displayName;
+var DialogContent = import_react.forwardRef(({ className, children, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogPortal, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogOverlay, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogContent$1, {
+	ref,
+	className: cn("fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 sm:rounded-lg", className),
+	...props,
+	children: [children, /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogClose, {
+		className: "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background cursor-pointer transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { className: "h-4 w-4" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+			className: "sr-only",
+			children: "Close"
+		})]
+	})]
+})] }));
+DialogContent.displayName = DialogContent$1.displayName;
+var DialogHeader = ({ className, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+	className: cn("flex flex-col space-y-1.5 text-center sm:text-left", className),
+	...props
+});
+DialogHeader.displayName = "DialogHeader";
+var DialogFooter = ({ className, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+	className: cn("flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2", className),
+	...props
+});
+DialogFooter.displayName = "DialogFooter";
+var DialogTitle = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTitle$1, {
+	ref,
+	className: cn("text-lg font-semibold leading-none tracking-tight", className),
+	...props
+}));
+DialogTitle.displayName = DialogTitle$1.displayName;
+var DialogDescription = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogDescription$1, {
+	ref,
+	className: cn("text-sm text-muted-foreground", className),
+	...props
+}));
+DialogDescription.displayName = DialogDescription$1.displayName;
 var FEED_URL = "https://feeds.behold.so/hZ8Rvr6NHV0xEsiL7exj";
 function formatFollowers(value) {
 	if (!value) return "Our community";
@@ -43,6 +87,17 @@ function postLabel(post) {
 function postImage(post) {
 	return post.sizes?.large?.mediaUrl || post.sizes?.medium?.mediaUrl || post.thumbnailUrl || post.mediaUrl;
 }
+function postMedia(post) {
+	return post.children?.length ? post.children : [post];
+}
+function postDate(value) {
+	if (!value) return null;
+	return new Intl.DateTimeFormat("en-US", {
+		month: "long",
+		day: "numeric",
+		year: "numeric"
+	}).format(new Date(value));
+}
 function LoadingGrid() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 		className: "flex gap-4 overflow-hidden sm:grid sm:grid-cols-2 lg:grid-cols-3",
@@ -53,6 +108,8 @@ function LoadingGrid() {
 function InstagramFeed() {
 	const [feed, setFeed] = (0, import_react.useState)(null);
 	const [failed, setFailed] = (0, import_react.useState)(false);
+	const [selectedPost, setSelectedPost] = (0, import_react.useState)(null);
+	const [activeMediaIndex, setActiveMediaIndex] = (0, import_react.useState)(0);
 	(0, import_react.useEffect)(() => {
 		const controller = new AbortController();
 		async function loadFeed() {
@@ -70,6 +127,16 @@ function InstagramFeed() {
 		return () => controller.abort();
 	}, []);
 	const posts = feed?.posts.filter((post) => !post.visibility || post.visibility === "visible").slice(0, 6);
+	const selectedMedia = selectedPost ? postMedia(selectedPost) : [];
+	function openPost(post) {
+		setActiveMediaIndex(0);
+		setSelectedPost(post);
+	}
+	function moveMedia(direction) {
+		setActiveMediaIndex((current) => {
+			return (current + direction + selectedMedia.length) % selectedMedia.length;
+		});
+	}
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
 		tone: "sand",
 		className: "overflow-hidden border-y border-border",
@@ -131,12 +198,11 @@ function InstagramFeed() {
 						children: posts.map((post, index) => {
 							const Icon = post.mediaType === "VIDEO" ? Play : Images;
 							const caption = post.prunedCaption || post.caption || "A recent moment from TLC Cleaning Co.";
-							return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-								href: post.permalink,
-								target: "_blank",
-								rel: "noreferrer",
-								className: "group relative aspect-[4/5] w-[78vw] max-w-[21rem] shrink-0 snap-center overflow-hidden rounded-[1.65rem] bg-ink shadow-[var(--shadow-soft)] sm:w-auto sm:max-w-none",
-								"aria-label": `View Instagram ${postLabel(post).toLowerCase()}: ${caption}`,
+							return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								type: "button",
+								onClick: () => openPost(post),
+								className: "group relative aspect-[4/5] w-[78vw] max-w-[21rem] shrink-0 snap-center overflow-hidden rounded-[1.65rem] bg-ink text-left shadow-[var(--shadow-soft)] outline-none transition-transform duration-300 hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-sand sm:w-auto sm:max-w-none",
+								"aria-label": `Open ${postLabel(post).toLowerCase()} preview: ${caption}`,
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 										src: postImage(post),
@@ -163,7 +229,7 @@ function InstagramFeed() {
 											children: caption
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 											className: "mt-3 inline-flex items-center gap-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-primary",
-											children: ["View on Instagram", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, { className: "size-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" })]
+											children: ["View here", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, { className: "size-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" })]
 										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
@@ -210,6 +276,114 @@ function InstagramFeed() {
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Instagram, {}), "Follow @mytlccleaningco"]
 					})
 				})
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Dialog, {
+				open: Boolean(selectedPost),
+				onOpenChange: (open) => {
+					if (!open) setSelectedPost(null);
+				},
+				children: selectedPost ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogContent, {
+					className: "grid h-[min(92dvh,54rem)] w-[calc(100%-1.25rem)] max-w-5xl grid-rows-[minmax(0,1fr)_auto] gap-0 overflow-hidden rounded-[1.75rem] border-white/10 bg-ink p-0 text-white shadow-2xl sm:w-[calc(100%-2rem)] lg:grid-cols-[minmax(0,1.15fr)_minmax(19rem,0.85fr)] lg:grid-rows-1 [&>button]:right-3 [&>button]:top-3 [&>button]:z-20 [&>button]:grid [&>button]:size-10 [&>button]:place-items-center [&>button]:rounded-full [&>button]:bg-black/55 [&>button]:text-white [&>button]:opacity-100 [&>button]:backdrop-blur-md",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "relative flex min-h-0 items-center justify-center overflow-hidden bg-black",
+						children: [selectedMedia[activeMediaIndex]?.mediaType === "VIDEO" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("video", {
+							src: selectedMedia[activeMediaIndex].mediaUrl,
+							poster: postImage(selectedMedia[activeMediaIndex]),
+							autoPlay: true,
+							playsInline: true,
+							controls: true,
+							className: "size-full object-contain",
+							children: "Your browser does not support embedded video."
+						}, selectedMedia[activeMediaIndex].id) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: postImage(selectedMedia[activeMediaIndex]),
+							alt: "TLC Cleaning Co. Instagram post",
+							width: selectedMedia[activeMediaIndex]?.sizes?.large?.width || 900,
+							height: selectedMedia[activeMediaIndex]?.sizes?.large?.height || 1125,
+							className: "size-full object-contain"
+						}), selectedMedia.length > 1 ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+								type: "button",
+								onClick: () => moveMedia(-1),
+								className: "absolute left-3 grid size-11 place-items-center rounded-full border border-white/20 bg-black/55 text-white backdrop-blur-md transition hover:bg-black/75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary",
+								"aria-label": "Previous image",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronLeft, { className: "size-5" })
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+								type: "button",
+								onClick: () => moveMedia(1),
+								className: "absolute right-3 grid size-11 place-items-center rounded-full border border-white/20 bg-black/55 text-white backdrop-blur-md transition hover:bg-black/75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary",
+								"aria-label": "Next image",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, { className: "size-5" })
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-1.5 rounded-full bg-black/55 px-3 py-2 backdrop-blur-md",
+								children: selectedMedia.map((media, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									type: "button",
+									onClick: () => setActiveMediaIndex(index),
+									className: `size-2 rounded-full transition ${index === activeMediaIndex ? "bg-primary" : "bg-white/45 hover:bg-white/75"}`,
+									"aria-label": `View item ${index + 1} of ${selectedMedia.length}`,
+									"aria-current": index === activeMediaIndex ? "true" : void 0
+								}, media.id))
+							})
+						] }) : null]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "scrollbar-none max-h-[34dvh] overflow-y-auto border-t border-white/10 bg-ink px-5 pb-6 pt-5 text-white lg:max-h-none lg:border-l lg:border-t-0 lg:px-7 lg:pb-8 lg:pt-8",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "flex items-center gap-3 border-b border-white/10 pb-5 pr-10",
+								children: [feed?.profilePictureUrl ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+									src: feed.profilePictureUrl,
+									alt: "",
+									width: 48,
+									height: 48,
+									className: "size-11 rounded-full border border-white/15 object-cover"
+								}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "grid size-11 place-items-center rounded-full bg-primary text-ink",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Instagram, { className: "size-5" })
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogTitle, {
+									className: "text-base text-white",
+									children: ["@", feed?.username || "mytlccleaningco"]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+									className: "mt-1 text-[0.65rem] font-semibold uppercase tracking-[0.15em] text-primary",
+									children: [postLabel(selectedPost), " · TLC Cleaning Co."]
+								})] })]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogDescription, {
+								className: "mt-5 whitespace-pre-line text-sm leading-7 text-white/75",
+								children: selectedPost.caption || selectedPost.prunedCaption || "A recent moment from TLC Cleaning Co."
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "mt-6 flex flex-wrap items-center gap-4 text-xs text-white/55",
+								children: [
+									typeof selectedPost.likeCount === "number" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "inline-flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Heart, { className: "size-4" }), selectedPost.likeCount]
+									}) : null,
+									typeof selectedPost.commentsCount === "number" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										className: "inline-flex items-center gap-1.5",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MessageCircle, { className: "size-4" }), selectedPost.commentsCount]
+									}) : null,
+									postDate(selectedPost.timestamp) ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "ml-auto",
+										children: postDate(selectedPost.timestamp)
+									}) : null
+								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
+								asChild: true,
+								variant: "hero",
+								size: "pill",
+								className: "mt-7 w-full",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+									href: selectedPost.permalink,
+									target: "_blank",
+									rel: "noreferrer",
+									children: ["View original on Instagram", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, {})]
+								})
+							})
+						]
+					})]
+				}) : null
 			})
 		]
 	});

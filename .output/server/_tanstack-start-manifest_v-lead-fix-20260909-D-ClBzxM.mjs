@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-lead-fix-20260909-D0xw9jFg.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-lead-fix-20260909-D-ClBzxM.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "C:/Users/barbo/Downloads/tlcc-clean/tlcc-modern-redesign-main/src/routes/__root.tsx",
@@ -14,28 +14,28 @@ var tsrStartManifest = () => ({ routes: {
 			"/specialized-services"
 		],
 		preloads: [
-			"/assets/index-Bd2BOLqm.js",
+			"/assets/index-D6w-hwzW.js",
 			"/assets/useRouter-lead-fix-20260909-CGWhr_yp.js",
 			"/assets/site-lead-fix-20260909-DcGKvOSK.js"
 		],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-Bd2BOLqm.js"
+			src: "/assets/index-D6w-hwzW.js"
 		} }]
 	},
 	"/": {
 		filePath: "C:/Users/barbo/Downloads/tlcc-clean/tlcc-modern-redesign-main/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-lead-fix-20260909-BUjHfBHs.js",
+			"/assets/routes-lead-fix-20260909-DMF8-Ec1.js",
 			"/assets/arrow-up-right-lead-fix-20260909-Db9_llqj.js",
 			"/assets/badge-check-lead-fix-20260909-B8k6D6tz.js",
-			"/assets/page-sections-lead-fix-20260909-C1y1a9id.js",
+			"/assets/page-sections-lead-fix-20260909-CG6c_ypE.js",
 			"/assets/truck-lead-fix-20260909-Bm-v0OMx.js",
 			"/assets/shield-check-lead-fix-20260909-C63j1NV6.js",
 			"/assets/AnimatedSection-lead-fix-20260909-BUZ8ohLV.js",
-			"/assets/cta-band-lead-fix-20260909-DB_OkW6R.js",
+			"/assets/cta-band-lead-fix-20260909-CPQZ-ZOL.js",
 			"/assets/residential-lead-fix-20260909-D8_90r4U.js",
 			"/assets/hero-kitchen-lead-fix-20260909-Dqf9tC33.js"
 		]
@@ -44,10 +44,10 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/barbo/Downloads/tlcc-clean/tlcc-modern-redesign-main/src/routes/about.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/about-lead-fix-20260909-D6TVyLzJ.js",
-			"/assets/page-sections-lead-fix-20260909-C1y1a9id.js",
+			"/assets/about-lead-fix-20260909-BMELk0_m.js",
+			"/assets/page-sections-lead-fix-20260909-CG6c_ypE.js",
 			"/assets/AnimatedSection-lead-fix-20260909-BUZ8ohLV.js",
-			"/assets/cta-band-lead-fix-20260909-DB_OkW6R.js",
+			"/assets/cta-band-lead-fix-20260909-CPQZ-ZOL.js",
 			"/assets/residential-lead-fix-20260909-D8_90r4U.js"
 		]
 	},
@@ -55,10 +55,10 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/barbo/Downloads/tlcc-clean/tlcc-modern-redesign-main/src/routes/additional-services.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/additional-services-lead-fix-20260909-j530DGji.js",
+			"/assets/additional-services-lead-fix-20260909-DWEOx_po.js",
 			"/assets/badge-check-lead-fix-20260909-B8k6D6tz.js",
-			"/assets/page-sections-lead-fix-20260909-C1y1a9id.js",
-			"/assets/cta-band-lead-fix-20260909-DB_OkW6R.js",
+			"/assets/page-sections-lead-fix-20260909-CG6c_ypE.js",
+			"/assets/cta-band-lead-fix-20260909-CPQZ-ZOL.js",
 			"/assets/hero-kitchen-lead-fix-20260909-Dqf9tC33.js"
 		]
 	},
@@ -66,9 +66,9 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/barbo/Downloads/tlcc-clean/tlcc-modern-redesign-main/src/routes/commercial.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/commercial-lead-fix-20260909-BCZVTywC.js",
-			"/assets/page-sections-lead-fix-20260909-C1y1a9id.js",
-			"/assets/cta-band-lead-fix-20260909-DB_OkW6R.js",
+			"/assets/commercial-lead-fix-20260909-Cn2DVHvW.js",
+			"/assets/page-sections-lead-fix-20260909-CG6c_ypE.js",
+			"/assets/cta-band-lead-fix-20260909-CPQZ-ZOL.js",
 			"/assets/service-story-lead-fix-20260909-wEhigIc8.js"
 		]
 	},
@@ -76,27 +76,27 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/barbo/Downloads/tlcc-clean/tlcc-modern-redesign-main/src/routes/contact.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/contact-lead-fix-20260909-DKfY-5mR.js",
+			"/assets/contact-lead-fix-20260909-Clw95nDF.js",
 			"/assets/arrow-up-right-lead-fix-20260909-Db9_llqj.js",
-			"/assets/dist-lead-fix-20260909-5ol3oCqF.js",
-			"/assets/page-sections-lead-fix-20260909-C1y1a9id.js",
+			"/assets/dist-lead-fix-20260909-DaMDN6sF.js",
+			"/assets/page-sections-lead-fix-20260909-CG6c_ypE.js",
 			"/assets/hero-kitchen-lead-fix-20260909-Dqf9tC33.js"
 		]
 	},
 	"/faq": {
 		filePath: "C:/Users/barbo/Downloads/tlcc-clean/tlcc-modern-redesign-main/src/routes/faq.tsx",
 		children: void 0,
-		preloads: ["/assets/faq-lead-fix-20260909-B_fUoveG.js"]
+		preloads: ["/assets/faq-lead-fix-20260909-CrpL2jvW.js"]
 	},
 	"/free-estimate": {
 		filePath: "C:/Users/barbo/Downloads/tlcc-clean/tlcc-modern-redesign-main/src/routes/free-estimate.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/free-estimate-lead-fix-20260909-DQYf_8Yy.js",
+			"/assets/free-estimate-lead-fix-20260909-rHmkcWqt.js",
 			"/assets/badge-check-lead-fix-20260909-B8k6D6tz.js",
 			"/assets/check-lead-fix-20260909-Bglfbz3e.js",
-			"/assets/dist-lead-fix-20260909-5ol3oCqF.js",
-			"/assets/page-sections-lead-fix-20260909-C1y1a9id.js",
+			"/assets/dist-lead-fix-20260909-DaMDN6sF.js",
+			"/assets/page-sections-lead-fix-20260909-CG6c_ypE.js",
 			"/assets/shield-check-lead-fix-20260909-C63j1NV6.js",
 			"/assets/hero-kitchen-lead-fix-20260909-Dqf9tC33.js"
 		]
@@ -105,9 +105,9 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/barbo/Downloads/tlcc-clean/tlcc-modern-redesign-main/src/routes/residential.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/residential-lead-fix-20260909-DI4koTWw.js",
-			"/assets/page-sections-lead-fix-20260909-C1y1a9id.js",
-			"/assets/cta-band-lead-fix-20260909-DB_OkW6R.js",
+			"/assets/residential-lead-fix-20260909-2gpzjFHE.js",
+			"/assets/page-sections-lead-fix-20260909-CG6c_ypE.js",
+			"/assets/cta-band-lead-fix-20260909-CPQZ-ZOL.js",
 			"/assets/residential-lead-fix-20260909-D8_90r4U.js",
 			"/assets/service-story-lead-fix-20260909-wEhigIc8.js"
 		]
@@ -116,10 +116,10 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/barbo/Downloads/tlcc-clean/tlcc-modern-redesign-main/src/routes/specialized-services.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/specialized-services-lead-fix-20260909-pJBlIA-i.js",
-			"/assets/page-sections-lead-fix-20260909-C1y1a9id.js",
+			"/assets/specialized-services-lead-fix-20260909-D8haW7jm.js",
+			"/assets/page-sections-lead-fix-20260909-CG6c_ypE.js",
 			"/assets/truck-lead-fix-20260909-Bm-v0OMx.js",
-			"/assets/cta-band-lead-fix-20260909-DB_OkW6R.js",
+			"/assets/cta-band-lead-fix-20260909-CPQZ-ZOL.js",
 			"/assets/hero-kitchen-lead-fix-20260909-Dqf9tC33.js"
 		]
 	}

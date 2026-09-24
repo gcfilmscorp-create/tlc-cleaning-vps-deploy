@@ -1,0 +1,1 @@
+import{r as e}from"./useRouter-lead-fix-20260909-CGWhr_yp.js";import{O as t}from"./index-D6w-hwzW.js";var n=e();function r(){return(0,n.jsx)(t,{to:`/contact`,hash:`faq`,replace:!0})}export{r as component};

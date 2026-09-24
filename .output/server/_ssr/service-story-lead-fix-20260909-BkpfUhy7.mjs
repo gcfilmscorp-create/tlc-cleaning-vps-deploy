@@ -2,7 +2,7 @@ import { r as __toESM } from "../_runtime.mjs";
 import { u as require_react } from "../_libs/@floating-ui/react-dom+[...].mjs";
 import { v as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { n as cn } from "./site-lead-fix-20260909-UvA_aLA3.mjs";
-import { M as Check } from "../_libs/lucide-react.mjs";
+import { F as Check } from "../_libs/lucide-react.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/service-story-lead-fix-20260909-BkpfUhy7.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
