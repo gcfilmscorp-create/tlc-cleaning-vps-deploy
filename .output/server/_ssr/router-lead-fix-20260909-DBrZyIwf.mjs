@@ -8,10 +8,10 @@ import { D as Clock, T as Facebook, U as ArrowUp, b as Instagram, g as MapPin, h
 import { a as DialogOverlay, c as DialogTrigger, i as DialogDescription, n as DialogClose, o as DialogPortal, r as DialogContent, s as DialogTitle, t as Dialog } from "../_libs/@radix-ui/react-dialog+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
 import { t as QueryClientProvider } from "../_libs/tanstack__react-query.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-lead-fix-20260909-BCircyj0.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-lead-fix-20260909-DBrZyIwf.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-CzZCPX0l.css";
+var styles_default = "/assets/styles-CuTqTO_V.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -681,7 +681,7 @@ function ErrorComponent({ error, reset }) {
 		})
 	});
 }
-var Route$9 = createRootRouteWithContext()({
+var Route$10 = createRootRouteWithContext()({
 	head: () => ({
 		meta: [
 			{ charSet: "utf-8" },
@@ -788,7 +788,7 @@ function RootShell({ children }) {
 	});
 }
 function RootComponent() {
-	const { queryClient } = Route$9.useRouteContext();
+	const { queryClient } = Route$10.useRouteContext();
 	const location = useLocation();
 	(0, import_react.useEffect)(() => {
 		window.scrollTo({
@@ -812,8 +812,8 @@ function RootComponent() {
 		})]
 	});
 }
-var $$splitComponentImporter$8 = () => import("./routes-lead-fix-20260909-DXs1S63l.mjs");
-var Route$8 = createFileRoute("/")({
+var $$splitComponentImporter$8 = () => import("./routes-lead-fix-20260909-9mzCKSuG.mjs");
+var Route$9 = createFileRoute("/")({
 	head: () => pageSeo({
 		path: "/",
 		title: "TLC Cleaning Co. — Professional Cleaning. Peace of Mind.",
@@ -823,7 +823,7 @@ var Route$8 = createFileRoute("/")({
 	component: lazyRouteComponent($$splitComponentImporter$8, "component")
 });
 var $$splitComponentImporter$7 = () => import("./about-lead-fix-20260909-BZjPY4Pm.mjs");
-var Route$7 = createFileRoute("/about")({
+var Route$8 = createFileRoute("/about")({
 	head: () => pageSeo({
 		path: "/about",
 		title: "Our Story — Rose & Julliana | TLC Cleaning Co.",
@@ -834,7 +834,7 @@ var Route$7 = createFileRoute("/about")({
 	component: lazyRouteComponent($$splitComponentImporter$7, "component")
 });
 var $$splitComponentImporter$6 = () => import("./additional-services-lead-fix-20260909-B2Id-mNT.mjs");
-var Route$6 = createFileRoute("/additional-services")({
+var Route$7 = createFileRoute("/additional-services")({
 	head: () => pageSeo({
 		path: "/additional-services",
 		title: "Add-On Cleaning Services & Service Types — TLC Cleaning Co.",
@@ -845,7 +845,7 @@ var Route$6 = createFileRoute("/additional-services")({
 	component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
 var $$splitComponentImporter$5 = () => import("./commercial-lead-fix-20260909-DF2_YEaL.mjs");
-var Route$5 = createFileRoute("/commercial")({
+var Route$6 = createFileRoute("/commercial")({
 	head: () => pageSeo({
 		path: "/commercial",
 		title: "Commercial Cleaning for Massachusetts Businesses — TLC Cleaning Co.",
@@ -855,8 +855,8 @@ var Route$5 = createFileRoute("/commercial")({
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$4 = () => import("./contact-lead-fix-20260909-r673qBWy.mjs");
-var Route$4 = createFileRoute("/contact")({
+var $$splitComponentImporter$4 = () => import("./contact-lead-fix-20260909-tWevmd5P.mjs");
+var Route$5 = createFileRoute("/contact")({
 	head: () => pageSeo({
 		path: "/contact",
 		title: "Contact TLC Cleaning Co. — Massachusetts",
@@ -867,9 +867,9 @@ var Route$4 = createFileRoute("/contact")({
 	component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
 var $$splitComponentImporter$3 = () => import("./faq-lead-fix-20260909-BUfHj-xh.mjs");
-var Route$3 = createFileRoute("/faq")({ component: lazyRouteComponent($$splitComponentImporter$3, "component") });
-var $$splitComponentImporter$2 = () => import("./free-estimate-lead-fix-20260909-BZh-M-I4.mjs");
-var Route$2 = createFileRoute("/free-estimate")({
+var Route$4 = createFileRoute("/faq")({ component: lazyRouteComponent($$splitComponentImporter$3, "component") });
+var $$splitComponentImporter$2 = () => import("./free-estimate-lead-fix-20260909-reDwc4DY.mjs");
+var Route$3 = createFileRoute("/free-estimate")({
 	head: () => pageSeo({
 		path: "/free-estimate",
 		title: "Request a Free Cleaning Estimate — TLC Cleaning Co.",
@@ -880,7 +880,7 @@ var Route$2 = createFileRoute("/free-estimate")({
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
 var $$splitComponentImporter$1 = () => import("./residential-lead-fix-20260909-ChCy0nAB.mjs");
-var Route$1 = createFileRoute("/residential")({
+var Route$2 = createFileRoute("/residential")({
 	head: () => pageSeo({
 		path: "/residential",
 		title: "Residential Cleaning in Massachusetts — TLC Cleaning Co.",
@@ -891,7 +891,7 @@ var Route$1 = createFileRoute("/residential")({
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
 var $$splitComponentImporter = () => import("./specialized-services-lead-fix-20260909-Bt9xswn1.mjs");
-var Route = createFileRoute("/specialized-services")({
+var Route$1 = createFileRoute("/specialized-services")({
 	head: () => pageSeo({
 		path: "/specialized-services",
 		title: "Deep, Move-Out & Post-Construction Cleaning — TLC Cleaning Co.",
@@ -901,54 +901,181 @@ var Route = createFileRoute("/specialized-services")({
 	}),
 	component: lazyRouteComponent($$splitComponentImporter, "component")
 });
+var FEED_URL = "https://feeds.behold.so/hZ8Rvr6NHV0xEsiL7exj";
+var CACHE_TTL_MS = 1800 * 1e3;
+var MAX_CACHE_BYTES = 32 * 1024 * 1024;
+var videoCache = /* @__PURE__ */ new Map();
+function findVideo(posts, id) {
+	for (const post of posts) {
+		if (post.id === id && post.mediaType === "VIDEO" && post.permalink) return {
+			video: post,
+			permalink: post.permalink,
+			videoIndex: 0
+		};
+		const videoChildren = post.children?.filter((media) => media.mediaType === "VIDEO") || [];
+		const videoIndex = videoChildren.findIndex((media) => media.id === id);
+		if (videoIndex >= 0 && post.permalink) return {
+			video: videoChildren[videoIndex],
+			permalink: post.permalink,
+			videoIndex
+		};
+	}
+	return null;
+}
+function decodeInstagramUrl(value) {
+	let decoded = value;
+	for (let pass = 0; pass < 2; pass += 1) decoded = JSON.parse(`"${decoded.replaceAll("\"", "\\\"")}"`);
+	return decoded;
+}
+function responseHeaders(contentType, size) {
+	const headers = new Headers({
+		"Content-Type": contentType,
+		"Cache-Control": "public, max-age=1800, stale-while-revalidate=86400",
+		"Content-Disposition": "inline",
+		"Accept-Ranges": "bytes",
+		"X-Content-Type-Options": "nosniff"
+	});
+	if (size) headers.set("Content-Length", String(size));
+	return headers;
+}
+function cachedResponse(video, rangeHeader) {
+	const total = video.body.byteLength;
+	const range = rangeHeader?.match(/^bytes=(\d*)-(\d*)$/);
+	if (!range) return new Response(video.body.slice(0), { headers: responseHeaders(video.contentType, total) });
+	const start = range[1] ? Number(range[1]) : 0;
+	const requestedEnd = range[2] ? Number(range[2]) : total - 1;
+	const end = Math.min(requestedEnd, total - 1);
+	if (!Number.isSafeInteger(start) || !Number.isSafeInteger(end) || start < 0 || start > end) return new Response(null, {
+		status: 416,
+		headers: { "Content-Range": `bytes */${total}` }
+	});
+	const headers = responseHeaders(video.contentType, end - start + 1);
+	headers.set("Content-Range", `bytes ${start}-${end}/${total}`);
+	return new Response(video.body.slice(start, end + 1), {
+		status: 206,
+		headers
+	});
+}
+function isAllowedMediaUrl(value) {
+	try {
+		const url = new URL(value);
+		return url.protocol === "https:" && (url.hostname.endsWith(".fbcdn.net") || url.hostname.endsWith(".cdninstagram.com"));
+	} catch {
+		return false;
+	}
+}
+var Route = createFileRoute("/api/instagram-media")({ server: { handlers: { GET: async ({ request }) => {
+	const id = new URL(request.url).searchParams.get("id")?.trim();
+	if (!id || !/^\d{8,32}$/.test(id)) return Response.json({ error: "Invalid media id" }, { status: 400 });
+	const cached = videoCache.get(id);
+	if (cached && cached.expiresAt > Date.now()) return cachedResponse(cached, request.headers.get("range"));
+	try {
+		const feedResponse = await fetch(FEED_URL, {
+			headers: { Accept: "application/json" },
+			signal: AbortSignal.timeout(8e3)
+		});
+		if (!feedResponse.ok) throw new Error(`Feed request failed: ${feedResponse.status}`);
+		const match = findVideo((await feedResponse.json()).posts || [], id);
+		if (!match) return Response.json({ error: "Video not found" }, { status: 404 });
+		const embedUrl = `${match.permalink.replace(/\/$/, "")}/embed/`;
+		const embedResponse = await fetch(embedUrl, {
+			headers: {
+				Accept: "text/html,application/xhtml+xml",
+				"Accept-Language": "en-US,en;q=0.9",
+				"User-Agent": "Mozilla/5.0"
+			},
+			signal: AbortSignal.timeout(1e4)
+		});
+		if (!embedResponse.ok) throw new Error(`Instagram embed request failed: ${embedResponse.status}`);
+		const embedHtml = await embedResponse.text();
+		const encodedUrls = Array.from(embedHtml.matchAll(/\\"video_url\\":\\"(.*?)\\"/g), (result) => result[1]);
+		const encodedUrl = encodedUrls[match.videoIndex] || encodedUrls[0];
+		if (!encodedUrl) throw new Error(`Regional video URL not found (marker: ${embedHtml.includes("video_url")})`);
+		const mediaUrl = decodeInstagramUrl(encodedUrl);
+		if (!isAllowedMediaUrl(mediaUrl)) throw new Error("Instagram returned an unexpected media host");
+		const upstream = await fetch(mediaUrl, {
+			headers: {
+				Accept: "video/mp4,video/*;q=0.9,*/*;q=0.5",
+				Referer: "https://www.instagram.com/",
+				"User-Agent": "Mozilla/5.0"
+			},
+			redirect: "follow",
+			signal: AbortSignal.timeout(2e4)
+		});
+		if (!upstream.ok || !upstream.body) throw new Error(`Video request failed: ${upstream.status} (${new URL(mediaUrl).hostname})`);
+		const contentType = upstream.headers.get("content-type") || "video/mp4";
+		const contentLength = Number(upstream.headers.get("content-length") || 0);
+		if (contentLength > 0 && contentLength <= MAX_CACHE_BYTES) {
+			const cachedVideo = {
+				body: await upstream.arrayBuffer(),
+				contentType,
+				expiresAt: Date.now() + CACHE_TTL_MS
+			};
+			videoCache.set(id, cachedVideo);
+			return cachedResponse(cachedVideo, request.headers.get("range"));
+		}
+		return new Response(upstream.body, { headers: responseHeaders(contentType, contentLength || void 0) });
+	} catch (error) {
+		console.error("Instagram media proxy failed", {
+			id,
+			message: error instanceof Error ? error.message : String(error)
+		});
+		return Response.json({ error: "Video temporarily unavailable" }, { status: 502 });
+	}
+} } } });
 var rootRouteChildren = {
-	IndexRoute: Route$8.update({
+	IndexRoute: Route$9.update({
 		id: "/",
 		path: "/",
-		getParentRoute: () => Route$9
+		getParentRoute: () => Route$10
 	}),
-	AboutRoute: Route$7.update({
+	AboutRoute: Route$8.update({
 		id: "/about",
 		path: "/about",
-		getParentRoute: () => Route$9
+		getParentRoute: () => Route$10
 	}),
-	AdditionalServicesRoute: Route$6.update({
+	AdditionalServicesRoute: Route$7.update({
 		id: "/additional-services",
 		path: "/additional-services",
-		getParentRoute: () => Route$9
+		getParentRoute: () => Route$10
 	}),
-	CommercialRoute: Route$5.update({
+	CommercialRoute: Route$6.update({
 		id: "/commercial",
 		path: "/commercial",
-		getParentRoute: () => Route$9
+		getParentRoute: () => Route$10
 	}),
-	ContactRoute: Route$4.update({
+	ContactRoute: Route$5.update({
 		id: "/contact",
 		path: "/contact",
-		getParentRoute: () => Route$9
+		getParentRoute: () => Route$10
 	}),
-	FaqRoute: Route$3.update({
+	FaqRoute: Route$4.update({
 		id: "/faq",
 		path: "/faq",
-		getParentRoute: () => Route$9
+		getParentRoute: () => Route$10
 	}),
-	FreeEstimateRoute: Route$2.update({
+	FreeEstimateRoute: Route$3.update({
 		id: "/free-estimate",
 		path: "/free-estimate",
-		getParentRoute: () => Route$9
+		getParentRoute: () => Route$10
 	}),
-	ResidentialRoute: Route$1.update({
+	ResidentialRoute: Route$2.update({
 		id: "/residential",
 		path: "/residential",
-		getParentRoute: () => Route$9
+		getParentRoute: () => Route$10
 	}),
-	SpecializedServicesRoute: Route.update({
+	SpecializedServicesRoute: Route$1.update({
 		id: "/specialized-services",
 		path: "/specialized-services",
-		getParentRoute: () => Route$9
+		getParentRoute: () => Route$10
+	}),
+	ApiInstagramMediaRoute: Route.update({
+		id: "/api/instagram-media",
+		path: "/api/instagram-media",
+		getParentRoute: () => Route$10
 	})
 };
-var routeTree = Route$9._addFileChildren(rootRouteChildren)._addFileTypes();
+var routeTree = Route$10._addFileChildren(rootRouteChildren)._addFileTypes();
 var getRouter = () => {
 	return createRouter({
 		routeTree,

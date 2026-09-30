@@ -10,7 +10,7 @@ import { i as SectionHeading, r as Section } from "./page-sections-lead-fix-2026
 import { t as residential_default } from "./residential-lead-fix-20260909-C3SAEcv5.mjs";
 import { t as hero_kitchen_default } from "./hero-kitchen-lead-fix-20260909-CnCra9cV.mjs";
 import { a as DialogOverlay$1, i as DialogDescription$1, n as DialogClose, o as DialogPortal$1, r as DialogContent$1, s as DialogTitle$1, t as Dialog$1 } from "../_libs/@radix-ui/react-dialog+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-lead-fix-20260909-DXs1S63l.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-lead-fix-20260909-9mzCKSuG.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function PhoneButton({ className, phone = "(978) 594-5554" }) {
@@ -110,6 +110,7 @@ function InstagramFeed() {
 	const [failed, setFailed] = (0, import_react.useState)(false);
 	const [selectedPost, setSelectedPost] = (0, import_react.useState)(null);
 	const [activeMediaIndex, setActiveMediaIndex] = (0, import_react.useState)(0);
+	const [videoStatus, setVideoStatus] = (0, import_react.useState)("idle");
 	(0, import_react.useEffect)(() => {
 		const controller = new AbortController();
 		async function loadFeed() {
@@ -128,14 +129,22 @@ function InstagramFeed() {
 	}, []);
 	const posts = feed?.posts.filter((post) => !post.visibility || post.visibility === "visible").slice(0, 6);
 	const selectedMedia = selectedPost ? postMedia(selectedPost) : [];
+	const activeMedia = selectedMedia[activeMediaIndex];
 	function openPost(post) {
 		setActiveMediaIndex(0);
+		setVideoStatus(postMedia(post)[0]?.mediaType === "VIDEO" ? "loading" : "idle");
 		setSelectedPost(post);
 	}
 	function moveMedia(direction) {
 		setActiveMediaIndex((current) => {
-			return (current + direction + selectedMedia.length) % selectedMedia.length;
+			const index = (current + direction + selectedMedia.length) % selectedMedia.length;
+			setVideoStatus(selectedMedia[index]?.mediaType === "VIDEO" ? "loading" : "idle");
+			return index;
 		});
+	}
+	function selectMedia(index) {
+		setActiveMediaIndex(index);
+		setVideoStatus(selectedMedia[index]?.mediaType === "VIDEO" ? "loading" : "idle");
 	}
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
 		tone: "sand",
@@ -280,25 +289,59 @@ function InstagramFeed() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Dialog, {
 				open: Boolean(selectedPost),
 				onOpenChange: (open) => {
-					if (!open) setSelectedPost(null);
+					if (!open) {
+						setSelectedPost(null);
+						setVideoStatus("idle");
+					}
 				},
 				children: selectedPost ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogContent, {
 					className: "grid h-[min(92dvh,54rem)] w-[calc(100%-1.25rem)] max-w-5xl grid-rows-[minmax(0,1fr)_auto] gap-0 overflow-hidden rounded-[1.75rem] border-white/10 bg-ink p-0 text-white shadow-2xl sm:w-[calc(100%-2rem)] lg:grid-cols-[minmax(0,1.15fr)_minmax(19rem,0.85fr)] lg:grid-rows-1 [&>button]:right-3 [&>button]:top-3 [&>button]:z-20 [&>button]:grid [&>button]:size-10 [&>button]:place-items-center [&>button]:rounded-full [&>button]:bg-black/55 [&>button]:text-white [&>button]:opacity-100 [&>button]:backdrop-blur-md",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "relative flex min-h-0 items-center justify-center overflow-hidden bg-black",
-						children: [selectedMedia[activeMediaIndex]?.mediaType === "VIDEO" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("video", {
-							src: selectedMedia[activeMediaIndex].mediaUrl,
-							poster: postImage(selectedMedia[activeMediaIndex]),
-							autoPlay: true,
-							playsInline: true,
-							controls: true,
-							className: "size-full object-contain",
-							children: "Your browser does not support embedded video."
-						}, selectedMedia[activeMediaIndex].id) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-							src: postImage(selectedMedia[activeMediaIndex]),
+						children: [activeMedia?.mediaType === "VIDEO" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+								src: postImage(activeMedia),
+								alt: "",
+								"aria-hidden": true,
+								className: "absolute inset-0 size-full object-contain opacity-60 blur-[1px]"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-black/45" }),
+							videoStatus === "failed" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "relative z-10 mx-6 max-w-sm rounded-3xl border border-white/15 bg-ink/95 p-7 text-center shadow-2xl backdrop-blur-md",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { className: "mx-auto size-8 text-primary" }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "mt-4 text-lg font-semibold text-white",
+										children: "The video is taking longer than expected."
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "mt-2 text-sm leading-relaxed text-white/65",
+										children: "The cover remains visible. You can still view the original post using the button beside it."
+									})
+								]
+							}) : null,
+							videoStatus === "loading" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "relative z-10 flex flex-col items-center gap-3 text-sm text-white/75",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "size-8 animate-spin rounded-full border-2 border-white/25 border-t-primary" }), "Preparing video…"]
+							}) : null,
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("video", {
+								src: `/api/instagram-media?id=${encodeURIComponent(activeMedia.id)}`,
+								poster: postImage(activeMedia),
+								title: `Instagram ${postLabel(selectedPost)} from TLC Cleaning Co.`,
+								controls: true,
+								autoPlay: true,
+								playsInline: true,
+								preload: "metadata",
+								onCanPlay: () => setVideoStatus("ready"),
+								onPlaying: () => setVideoStatus("ready"),
+								onError: () => setVideoStatus("failed"),
+								className: `relative z-10 size-full object-contain transition-opacity duration-300 ${videoStatus === "ready" ? "opacity-100" : "pointer-events-none opacity-0"}`
+							}, activeMedia.id)
+						] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: postImage(activeMedia),
 							alt: "TLC Cleaning Co. Instagram post",
-							width: selectedMedia[activeMediaIndex]?.sizes?.large?.width || 900,
-							height: selectedMedia[activeMediaIndex]?.sizes?.large?.height || 1125,
+							width: activeMedia?.sizes?.large?.width || 900,
+							height: activeMedia?.sizes?.large?.height || 1125,
 							className: "size-full object-contain"
 						}), selectedMedia.length > 1 ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
@@ -319,7 +362,7 @@ function InstagramFeed() {
 								className: "absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-1.5 rounded-full bg-black/55 px-3 py-2 backdrop-blur-md",
 								children: selectedMedia.map((media, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 									type: "button",
-									onClick: () => setActiveMediaIndex(index),
+									onClick: () => selectMedia(index),
 									className: `size-2 rounded-full transition ${index === activeMediaIndex ? "bg-primary" : "bg-white/45 hover:bg-white/75"}`,
 									"aria-label": `View item ${index + 1} of ${selectedMedia.length}`,
 									"aria-current": index === activeMediaIndex ? "true" : void 0

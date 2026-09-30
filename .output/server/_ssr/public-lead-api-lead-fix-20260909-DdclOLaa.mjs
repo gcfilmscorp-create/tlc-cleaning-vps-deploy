@@ -4,7 +4,7 @@ import { v as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[..
 import { t as cva } from "../_libs/class-variance-authority+clsx.mjs";
 import { n as cn } from "./site-lead-fix-20260909-UvA_aLA3.mjs";
 import { t as Root } from "../_libs/radix-ui__react-label.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/public-lead-api-lead-fix-20260909-CAt0HhXC.js
+//#region node_modules/.nitro/vite/services/ssr/assets/public-lead-api-lead-fix-20260909-DdclOLaa.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var Input = import_react.forwardRef(({ className, type, ...props }, ref) => {
@@ -31,7 +31,7 @@ var Textarea = import_react.forwardRef(({ className, ...props }, ref) => {
 	});
 });
 Textarea.displayName = "Textarea";
-var apiBaseUrl = (("https://api.mytlcco.com".trim() ?? "") || runtimeApiBaseUrl()).replace(/\/$/, "");
+var apiBaseUrl = runtimeApiBaseUrl().replace(/\/$/, "");
 /**
 * The public image is also built outside Vite (for example by a Docker
 * release job), so it must still find the API when no VITE_* value was
