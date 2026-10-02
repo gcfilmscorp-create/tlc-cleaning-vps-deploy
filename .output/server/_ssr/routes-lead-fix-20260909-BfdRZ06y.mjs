@@ -10,7 +10,7 @@ import { i as SectionHeading, r as Section } from "./page-sections-lead-fix-2026
 import { t as residential_default } from "./residential-lead-fix-20260909-C3SAEcv5.mjs";
 import { t as hero_kitchen_default } from "./hero-kitchen-lead-fix-20260909-CnCra9cV.mjs";
 import { a as DialogOverlay$1, i as DialogDescription$1, n as DialogClose, o as DialogPortal$1, r as DialogContent$1, s as DialogTitle$1, t as Dialog$1 } from "../_libs/@radix-ui/react-dialog+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-lead-fix-20260909-9mzCKSuG.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-lead-fix-20260909-BfdRZ06y.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function PhoneButton({ className, phone = "(978) 594-5554" }) {
@@ -431,7 +431,7 @@ function InstagramFeed() {
 		]
 	});
 }
-var rose_julliana_story_default = "/assets/rose-julliana-story-DGYLKzNV.webp";
+var rose_julliana_home_default = "/assets/rose-julliana-home-C6RGXZAh.webp";
 var services = [
 	{
 		icon: House,
@@ -612,13 +612,13 @@ function Home() {
 								className: "relative overflow-hidden rounded-[1.25rem]",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-										src: rose_julliana_story_default,
+										src: rose_julliana_home_default,
 										alt: "Rose and Julliana, the mother-and-daughter owners of TLC Cleaning Co.",
-										width: 1536,
-										height: 1024,
+										width: 1024,
+										height: 760,
 										fetchPriority: "high",
 										decoding: "async",
-										className: "aspect-[3/2] w-full object-cover"
+										className: "aspect-[3/2] w-full object-cover object-[center_44%]"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink/75 to-transparent" }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figcaption", {

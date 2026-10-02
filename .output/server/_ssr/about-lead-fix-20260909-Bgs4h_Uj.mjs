@@ -4,9 +4,9 @@ import { t as AnimatedSection } from "./AnimatedSection-lead-fix-20260909-DoBcVP
 import { t as CtaBand } from "./cta-band-lead-fix-20260909-BoEjIfIZ.mjs";
 import { i as SectionHeading, n as PageHero, r as Section } from "./page-sections-lead-fix-20260909-iQ-k7Kxp.mjs";
 import { t as residential_default } from "./residential-lead-fix-20260909-C3SAEcv5.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-lead-fix-20260909-BZjPY4Pm.js
+//#region node_modules/.nitro/vite/services/ssr/assets/about-lead-fix-20260909-Bgs4h_Uj.js
 var import_jsx_runtime = require_jsx_runtime();
-var rose_julliana_portrait_default = "/assets/rose-julliana-portrait-C0Zn22LQ.webp";
+var rose_julliana_story_default = "/assets/rose-julliana-story-DGYLKzNV.webp";
 var storyChapters = [
 	{
 		number: "01",
@@ -54,10 +54,10 @@ function About() {
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Section, {
 			className: "overflow-hidden",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "grid items-end gap-10 lg:grid-cols-[minmax(0,0.78fr)_minmax(0,1.22fr)] lg:gap-16",
+				className: "grid items-center gap-10 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:gap-16",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AnimatedSection, {
 					animation: "fade-in-right",
-					className: "pb-2 lg:pb-10",
+					className: "pb-2",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "eyebrow text-muted-foreground",
@@ -86,17 +86,17 @@ function About() {
 					animation: "fade-in-left",
 					delay: 100,
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
-						className: "relative mx-auto w-full max-w-[36rem] lg:mr-0",
+						className: "relative mx-auto w-full max-w-[42rem] lg:mr-0",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -left-4 -top-4 hidden size-24 rounded-tl-[2.5rem] border-l border-t border-primary/70 md:block" }),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-								src: rose_julliana_portrait_default,
+								src: rose_julliana_story_default,
 								alt: "Rose and Julliana, the mother-and-daughter team behind TLC Cleaning Co.",
-								width: 1024,
-								height: 1536,
+								width: 1536,
+								height: 1024,
 								loading: "eager",
 								decoding: "async",
-								className: "aspect-[3/4] w-full rounded-[1.75rem] object-cover object-center shadow-[var(--shadow-lift)]"
+								className: "aspect-[3/2] w-full rounded-[1.75rem] object-cover object-center shadow-[var(--shadow-lift)]"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figcaption", {
 								className: "relative -mt-5 ml-5 mr-5 rounded-2xl border border-border/80 bg-background/95 px-5 py-4 shadow-[var(--shadow-soft)] backdrop-blur md:ml-auto md:mr-7 md:max-w-sm md:px-6",

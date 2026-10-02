@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: tlc-cleaning-site:1de9c27
+    image: tlc-cleaning-site:c6efe65
     container_name: tlc-cleaning-site
     restart: unless-stopped
     init: true

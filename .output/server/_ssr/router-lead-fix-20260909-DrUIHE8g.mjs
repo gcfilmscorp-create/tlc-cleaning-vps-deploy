@@ -8,10 +8,10 @@ import { D as Clock, T as Facebook, U as ArrowUp, b as Instagram, g as MapPin, h
 import { a as DialogOverlay, c as DialogTrigger, i as DialogDescription, n as DialogClose, o as DialogPortal, r as DialogContent, s as DialogTitle, t as Dialog } from "../_libs/@radix-ui/react-dialog+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
 import { t as QueryClientProvider } from "../_libs/tanstack__react-query.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-lead-fix-20260909-DBrZyIwf.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-lead-fix-20260909-DrUIHE8g.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-CuTqTO_V.css";
+var styles_default = "/assets/styles-xRDrcR8m.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -812,7 +812,7 @@ function RootComponent() {
 		})]
 	});
 }
-var $$splitComponentImporter$8 = () => import("./routes-lead-fix-20260909-9mzCKSuG.mjs");
+var $$splitComponentImporter$8 = () => import("./routes-lead-fix-20260909-BfdRZ06y.mjs");
 var Route$9 = createFileRoute("/")({
 	head: () => pageSeo({
 		path: "/",
@@ -822,7 +822,7 @@ var Route$9 = createFileRoute("/")({
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$8, "component")
 });
-var $$splitComponentImporter$7 = () => import("./about-lead-fix-20260909-BZjPY4Pm.mjs");
+var $$splitComponentImporter$7 = () => import("./about-lead-fix-20260909-Bgs4h_Uj.mjs");
 var Route$8 = createFileRoute("/about")({
 	head: () => pageSeo({
 		path: "/about",
